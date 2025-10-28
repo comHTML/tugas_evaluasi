@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trial Code — Transforming Ideas Into Digital Reality</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- NAVBAR -->
@@ -15,7 +15,6 @@
         <span>Trial<span class="accent">Code</span></span>
       </div>
       <nav>
-        <button id="theme-toggle" class="theme-btn">🌙</button>
         <ul>
           <li><a href="#home">Beranda</a></li>
           <li><a href="#about">Tentang</a></li>
@@ -29,26 +28,29 @@
 
   <!-- HERO SLIDER -->
   <section id="home" class="slider">
-    <div class="slides fade">
+    <div class="slide fade">
       <img src="assets/hero1.jpg" alt="Innovation Slide" />
       <div class="caption">Kami Ubah Ide Menjadi Solusi Digital Nyata</div>
     </div>
-    <div class="slides fade">
+
+    <div class="slide fade">
       <img src="assets/hero2.jpg" alt="Tech Slide" />
       <div class="caption">Membangun Masa Depan Teknologi Bersama</div>
     </div>
 
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
+    <div class="slide fade">
+      <img src="assets/hero3.jpg" alt="Productivity Slide" />
+      <div class="caption">Mewujudkan Efisiensi dan Produktivitas Digital</div>
+    </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="about container">
     <h2>Tentang Trial Code</h2>
     <p>
-      Trial Code adalah startup teknologi yang berfokus pada pengembangan aplikasi berbasis web dan AI.
-      Kami percaya bahwa setiap ide layak diuji, dikembangkan, dan diwujudkan dengan solusi digital yang tepat.
-      Dengan tim muda yang dinamis dan inovatif, kami siap membantu bisnis berkembang di era transformasi digital.
+      Trial Code adalah startup teknologi yang mengembangkan solusi digital inovatif, termasuk aplikasi ToDo+ 
+      untuk membantu pengguna mengatur tugas dan waktu dengan efisien. Kami berkomitmen menciptakan teknologi 
+      sederhana namun berdampak besar bagi produktivitas di era digital.
     </p>
   </section>
 
@@ -60,45 +62,47 @@
         <div class="card">
           <img src="assets/service1.jpg" alt="Web Development" />
           <h3>Web Development</h3>
-          <p>Kami mengembangkan website modern, cepat, dan simple termasuk aplikasi produktivitas seperti ToDo+ yang membantu tim bekerja lebih efisien.</p>
+          <p>Kami mengembangkan website modern, cepat, dan simple termasuk aplikasi produktivitas seperti ToDo+.</p>
         </div>
         <div class="card">
           <img src="assets/service2.jpg" alt="AI Integration" />
           <h3>AI Integration</h3>
-          <p>Kami menghadirkan solusi AI untuk meningkatkan kinerja aplikasi, seperti fitur pengingat cerdas dan analisis kebiasaan pada ToDo+.</p>
+          <p>Kami menghadirkan solusi AI untuk meningkatkan kinerja aplikasi seperti pengingat cerdas dan analisis data.</p>
         </div>
       </div>
     </div>
   </section>
 
- <!-- ====== HOT NEWS ====== -->
-<section id="news" class="news container">
-  <h2>Berita Terbaru</h2>
-  <div class="news-grid">
+  <!-- NEWS -->
+  <section id="news" class="news container">
+    <h2>Berita Terbaru</h2>
+    <div class="news-grid">
 
-    <article class="fade-in">
-      <img src="assets/todolist-news.jpg" alt="ToDo+ Launch by Trial Code" />
-      <h3>Trial Code Luncurkan Aplikasi ToDo+</h3>
-      <p>
-        Trial Code resmi merilis <strong>ToDo+</strong>, aplikasi manajemen tugas sederhana 
-        yang dirancang untuk membantu pengguna mengatur aktivitas harian dengan efisien dan produktif.
-        Dengan tampilan minimalis, cepat, dan mudah digunakan, ToDo+ membantu pengguna tetap fokus tanpa distraksi.
-      </p>
-    </article>
+      <article class="fade-in">
+        <img src="assets/todolist-news.jpg" alt="ToDo+ Launch by Trial Code" />
+        <h3>Trial Code Luncurkan Aplikasi ToDo+</h3>
+        <p>
+          Trial Code resmi merilis <strong>ToDo+</strong>, aplikasi manajemen tugas sederhana 
+          yang membantu pengguna mengatur aktivitas harian dengan efisien dan produktif.
+        </p>
+      </article>
 
-    <article class="fade-in">
-      <img src="assets/todolist-feature.jpg" alt="Keunggulan ToDo+" />
-      <h3>Keunggulan ToDo+</h3>
-      <p>
-        Dibandingkan aplikasi serupa, <strong>ToDo+</strong> unggul dalam kesederhanaan dan kecepatan.
-        Tidak perlu login, bebas iklan, dan sepenuhnya dapat dijalankan langsung di browser.
-        Aplikasi ini menjadi contoh nyata inovasi <strong>Trial Code</strong> dalam menciptakan solusi produktivitas ringan 
-        namun tetap fungsional untuk berbagai kalangan pengguna.
-      </p>
-    </article>
+      <article class="fade-in">
+        <img src="assets/todolist-feature.jpg" alt="Keunggulan ToDo+" />
+        <h3>Keunggulan ToDo+</h3>
+        <p>
+          Dibandingkan aplikasi serupa, <strong>ToDo+</strong> unggul dalam kesederhanaan dan kecepatan. 
+          Aplikasi ini bebas login, bebas iklan, dan langsung dapat digunakan di browser.
+        </p>
+      </article>
 
-  </div>
-</section>
+      <article class="fade-in">
+        <img src="assets/todolist-image.jpg" alt="gambar todo list" />
+        <h3>Mari Kenal ToDo+ Lebih Jauh</h3>
+        <p><a href="projects1.html" target="_blank">Lihat Detail</a></p>
+      </article>
+    </div>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
@@ -113,7 +117,7 @@
   <footer>
     <div class="container footer-content">
       <div>
-        <img src="assets/logo.png" alt="Trial Code" class="footer-logo" />
+        <img src="assets/Gambar111.jpg" alt="Trial Code" class="footer-logo" />
         <p>© 2025 Trial Code — All Rights Reserved</p>
       </div>
       <div class="footer-social">
@@ -123,6 +127,5 @@
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
 </body>
 </html>
