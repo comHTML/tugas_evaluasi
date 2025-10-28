@@ -17,6 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #000000;
 }
 
 .logo img {
@@ -54,7 +55,7 @@ nav a:hover { color: #030ae6ee; }
   transform: translateX(-50%);
   color: #fff;
   background: rgba(0,0,0,0.6);
-  padding: 15px 25px;
+  padding: 10px 25px;
   border-radius: 5px;
   font-size: 1.3rem;
 }
@@ -72,7 +73,7 @@ nav a:hover { color: #030ae6ee; }
 
 /* Sections */
 section { padding: 80px 0; }
-h2 { text-align: center; margin-bottom: 30px; color: #5190d9; }
+h2 { text-align: left; margin-bottom: 30px; color: #006aff; }
 
 .about p {
   max-width: 800px;
@@ -86,7 +87,7 @@ h2 { text-align: center; margin-bottom: 30px; color: #5190d9; }
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 90px;
 }
 .card {
   background: white;
@@ -97,18 +98,76 @@ h2 { text-align: center; margin-bottom: 30px; color: #5190d9; }
 }
 .card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
 
-/* News */
+/* ==== News Section ==== */
+.news {
+  padding: 10px 10%;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.news h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+  text-align: left;
+}
+
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
+  justify-content: center;
+  text-align: left;
 }
-.news img {
+
+.news article {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.news article img {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
+  border-radius: 0;
+  display: block;
+}
+
+.news article h3,
+.news article p {
+  text-align: left;
+  padding: 0 20px; /* memberi ruang kiri dan kanan */
+}
+
+.news article h3 {
+  font-size: 1.3rem;
+  color: #0077ff;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
+.news article p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ==== Fade-In Animation ==== */
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ==== Fade-In Animation ==== */
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* Contact */
 .contact {
   background: #002b5c;
